@@ -355,10 +355,6 @@ button:hover {
     line-height: 1.2; /* Make text spacing tighter */
 }
 
-body {
-    margin-bottom: 40px; /* Ensure the footer does not overlap content */
-}
-
 /* Custom scrollbar for modern browsers */
 ::-webkit-scrollbar {
     width: 14px; /* Increased width for more prominence */
@@ -385,4 +381,3 @@ html {
     scrollbar-width: medium; /* Medium width to make it noticeable */
     scrollbar-color: #666 #e0e0e0; /* Thumb color and track color */
 }
-
