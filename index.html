@@ -191,9 +191,19 @@
       <h3><!-- Add appropriate text here--></h3>
       <button onclick="showPopup(false)">Ok</button>
     </div>
+    
     <footer id="site-footer">
-    © 2022 Made by Jorge Contreras
-</footer>
+      © 2022 Made by Jorge Contreras
+    </footer>
+    
+    <script>
+      // Get the current year
+      const currentYear = new Date().getFullYear();
+      // Get the footer element
+      const footer = document.getElementById('site-footer');
+      // Update the footer text dynamically
+      footer.innerHTML = `© ${currentYear} Made by Jorge Contreras`;
+    </script>
 
   </body>
 </html>
