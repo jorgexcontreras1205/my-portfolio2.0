@@ -164,15 +164,15 @@
     </section>
 
     <!-- Recommendation Form -->
-    <section id="contact">
-      <div class="flex_center">
+    <section id="contact" class="recommendation-form">
+      <div class="form-wrapper flex_center">
         <fieldset>
           <legend class="introduction">Leave a Recommendation</legend>          
-          <input type="text" placeholder="Name (Optional)"> <br/>
-          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-          <div class="flex_center">
-            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
-          </div>
+          <input type="text" placeholder="Your Name (Optional)" id="recommendation-name">
+          <textarea id="new_recommendation" cols="500" rows="5" placeholder="Your Recommendation"></textarea>
+            <div class="flex_center">
+              <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+            </div>
         </fieldset>
       </div>
     </section>
