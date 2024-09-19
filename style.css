@@ -380,27 +380,3 @@ html {
     scrollbar-width: medium; /* Medium width to make it noticeable */
     scrollbar-color: #666 #e0e0e0; /* Thumb color and track color */
 }
-
-body {
-    cursor: none;
-}
-
-#custom-cursor {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #ff6347;
-    border-radius: 50%;
-    position: absolute;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: transform 0.1s ease;
-    z-index: 1000;
-    background-color: rgba(255, 99, 71, 0.5);
-}
-
-.hover-effect {
-    width: 30px;
-    height: 30px;
-    border-color: #ff4500;
-    background-color: rgba(255, 69, 0, 0.3);
-}
