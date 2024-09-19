@@ -380,3 +380,25 @@ html {
     scrollbar-width: medium; /* Medium width to make it noticeable */
     scrollbar-color: #666 #e0e0e0; /* Thumb color and track color */
 }
+
+/* Basic styling for the navigation */
+nav {
+    background-color: #f8f9fa; /* Light background for the navbar */
+    padding: 10px 0;
+}
+
+/* Styling the menu items */
+.topmenu {
+    color: #333; /* Default text color */
+    font-size: 18px;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect: change text color and add underline */
+.topmenu:hover {
+    color: #ff6347; /* Text color changes to a reddish-orange on hover */
+    border-bottom: 2px solid #ff6347; /* Add a smooth underline */
+}
