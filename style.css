@@ -492,9 +492,3 @@ html {
     color: white; /* Set the contact information (email and phone number) to white */
     font-size: 16px; /* Optional: adjust the font size for readability */
 }
-
-.contact_info img {
-    margin-right: 10px;
-    vertical-align: middle;
-    filter: invert(100%); /* This inverts the image colors to match white text, if necessary */
-}
