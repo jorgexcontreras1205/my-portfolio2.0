@@ -381,3 +381,48 @@ html {
     scrollbar-width: medium; /* Medium width to make it noticeable */
     scrollbar-color: #666 #e0e0e0; /* Thumb color and track color */
 }
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    transform: translateY(-5px); /* Bounce effect */
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #ff6347;
+    z-index: 0;
+    transition: left 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    left: 0;
+}
