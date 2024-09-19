@@ -59,21 +59,3 @@ function showPopup(bool, message = "") {
     }, 500); // Wait for the fade-out effect to complete before hiding
   }
 }
-
-const cursor = document.getElementById('custom-cursor');
-
-document.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.pageX + 'px';
-    cursor.style.top = e.pageY + 'px';
-});
-
-const clickableElements = document.querySelectorAll('a, button');
-
-clickableElements.forEach(element => {
-    element.addEventListener('mouseenter', () => {
-        cursor.classList.add('hover-effect');
-    });
-    element.addEventListener('mouseleave', () => {
-        cursor.classList.remove('hover-effect');
-    });
-});
