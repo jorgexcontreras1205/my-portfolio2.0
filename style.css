@@ -382,47 +382,49 @@ html {
     scrollbar-color: #666 #e0e0e0; /* Thumb color and track color */
 }
 
-nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+/* Basic styling for the navigation */
+nav {
+    background-color: #f8f9fa;
+    padding: 10px 0;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-    position: relative;
-    overflow: hidden;
+/* Container for the menu items */
+nav .topdiv {
+    text-align: right;
 }
 
-nav ul li a {
+/* Basic styles for the navigation links */
+nav .topdiv a {
     text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    padding: 10px 15px;
-    display: block;
+    color: #333; /* Text color */
+    font-size: 18px; /* Font size */
+    padding: 10px 15px; /* Padding around the links */
+    display: inline-block;
     position: relative;
     z-index: 1;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
-nav ul li a:hover {
-    color: #fff;
-    transform: translateY(-5px); /* Bounce effect */
+/* Hover effect: text color change and bounce */
+nav .topdiv a:hover {
+    color: #fff; /* Change text color to white on hover */
+    transform: translateY(-5px); /* Add bounce effect */
 }
 
-nav ul li a::before {
+/* Sliding background effect */
+nav .topdiv a::before {
     content: '';
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: #ff6347;
+    background-color: #ff6347; /* Background color that slides in */
     z-index: 0;
-    transition: left 0.3s ease;
+    transition: left 0.3s ease; /* Smooth sliding effect */
 }
 
-nav ul li a:hover::before {
-    left: 0;
+/* Background slides in on hover */
+nav .topdiv a:hover::before {
+    left: 0; /* Background slides in */
 }
